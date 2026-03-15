@@ -1,0 +1,12 @@
+# Hydration Monitor Backend — Python dependencies
+# Install with: pip install -r requirements.txt
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+aiomqtt>=2.0.0           # async MQTT client
+apscheduler>=3.10.4      # scheduled jobs (pace recalc, night mode, calibration)
+pydantic>=2.0.0          # request/response validation (bundled with FastAPI)
+requests>=2.31.0         # simulate.py only — not needed in production
+
+# Optional: swap sqlite3 for PostgreSQL in production
+# psycopg2-binary>=2.9.9
